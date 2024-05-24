@@ -5,7 +5,7 @@ function uploadFile(input) {
     formData.append('file', file);
 
     let xhr = new XMLHttpRequest();
-    xhr.open('POST', 'upload.php', true);
+    xhr.open('POST', 'index.html', true);
 
     xhr.upload.onprogress = function(event) {
         if (event.lengthComputable) {
